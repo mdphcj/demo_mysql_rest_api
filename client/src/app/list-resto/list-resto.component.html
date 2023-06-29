@@ -1,0 +1,5 @@
+<p *ngFor="let item of collection">
+  {{ item.id }} {{ item.name }} {{ item.address }} {{ item.email }}
+  <button (click)="deleteRestoById(item.id)">Delete Resto</button>
+  <a routerLink="/update/{{ item.id }}">Edit</a>
+</p>

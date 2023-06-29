@@ -1,0 +1,7 @@
+<form #restoForm="ngForm" (ngSubmit)="onSubmit(restoForm.value)">
+  <input type="text" name="name" ngModel /><br /><br />
+  <input type="text" name="address" ngModel /><br /><br />
+  <input type="text" name="email" ngModel /><br /><br />
+  <button type="submit">Insert</button>
+</form>
+<p *ngIf="alert">Record Inserted</p>
